@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", function() {
             var line = lines[i];
             var checkbox = document.getElementById("line" + (i + 1));
             if (checkbox && checkbox.checked) {
-                output += "<br /><br /><b>" + line + "</b>";
+                output += "\n<br /><br /><b>" + line + "</b>";
             } else {
                 output += "\n<br />&amp;bull;" + line;
             }
         }
-        output = output.replace("<br /><br />","");
+        output = output.replace("\n<br /><br />","");
         outputText.innerHTML = output.trim();
     }
 
