@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 output += "\n<br />&amp;bull;" + line;
             }
         }
-        var result = name.replace("<br /><br />","")
+        var result = name.replace("<br /><br />","");
         outputText.innerHTML = result.trim();
     }
 
