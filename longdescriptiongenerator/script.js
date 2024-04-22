@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (checkbox && checkbox.checked) {
                 output += "<b>" + line + "</b>";
             } else {
-                output += "\n<br />&" + "bull;" + line;
+                output += "\n<br />&amp;bull;" + line;
             }
         }
         outputText.innerHTML = output.trim();
