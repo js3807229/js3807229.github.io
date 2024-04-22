@@ -38,12 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
             var line = lines[i];
             var checkbox = document.getElementById("line" + (i + 1));
             if (checkbox && checkbox.checked) {
-                output += "<b>" + line + "</b>";
+                output += "<br /><br /><b>" + line + "</b>";
             } else {
                 output += "\n<br />&amp;bull;" + line;
             }
         }
-        outputText.innerHTML = output.trim();
+        var result = name.replace("<br /><br />","")
+        outputText.innerHTML = result.trim();
     }
 
     // Function to remove blank lines
